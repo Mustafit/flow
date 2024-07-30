@@ -1,0 +1,10 @@
+<script>
+        window.onload = function() {
+             history.pushState(null, null, location.href);
+            window.addEventListener('popstate', function(event) {
+                history.pushState(null, null, location.href);
+                // Tampilan pesan ketika kembali
+                alert('isi sesuai kondisi');
+            });
+        }
+    </script>
